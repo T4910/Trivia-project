@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>
+                    What is the capital of Nigeria?
+                </h3>
+
+                <button id="multi-choice" class="active-btn">Lome</button>
+                <button id="multi-choice">Abuja</button>
+                <button id="multi-choice">Cario</button>
+                <button id="multi-choice">Athens</button>
+                <button id="multi-choice">Lagos</button>
+
+                <div class="answer correct hide" id="pop-up1">
+                    <p>
+                        Correct! &#10004;
+                    </p>
+                    <button class="cancel">
+                        &#10005;
+                    </button>
+                </div>
+                <div class="answer wrong hide" id="pop-up1">
+                    <p>
+                        Incorrect &#10008;
+                    </p>
+                    <button class="cancel">
+                        &#10005;
+                    </button>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>
+                    What process would coal undergo to give coal gas, coal tar,
+                    ammoniacal liquor and coke?
+                </h3>
+                <form id="life_question" name="life_question">
+                    <input id="anslifequestion" name="anslife?" type="text" value="" autocomplete="off"/>
+                    <input id="submitans" type="submit" value="Check answer"/>
+                </form>
+                <div class="answer correct hide" id="pop-up2">
+                    <p>
+                        Correct! &#10004;
+                    </p>
+                    <button class="cancel">
+                        &#10005;
+                    </button>
+                </div>
+                <div class="answer wrong hide" id="pop-up2">
+                    <p>
+                        Incorrect &#10008;
+                    </p>
+                    <button class="cancel">
+                        &#10005;
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="app.js"></script>
+</html>
